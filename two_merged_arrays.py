@@ -15,9 +15,8 @@ def merge_sorted_arrays(array1, array2):
         else:
             result.append(array2[j])
             j += 1
-    result.extend(array1[i:])
-    result.extend(array2[j:])
-    return result
+
+    return result + array1[i:] + array2[j:]
 
 # recursion
 
